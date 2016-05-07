@@ -26,6 +26,7 @@ def configure():
 @task
 def deploy():
     with cd('/home/{0}/ohc/obsidian'.format(env.user)):
+        run('git pull origin master')
         virtualenv('pip install -r requirements.txt')
 
     pass
