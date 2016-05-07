@@ -1,0 +1,72 @@
+
+
+$red  : #f76c51;
+$blue : #5fa2dd;
+$bluelight: #a0c7ea;
+$green: #9cc96b;
+$obsidian: #343637;
+$obsidianlighter: #414344;
+$obsidianlight: #cbc9c8;
+
+$primary: $obsidian;
+$secondary: $blue;
+$active: $red;
+
+.bg-primary { background-color: $primary;}
+.bg-secondary{ background-color: $secondary; }
+
+.panel-primary .panel-default .panel-heading.bg-active,
+.bg-active{ background-color: $active; }
+
+.panel.panel-primary { border-color: $primary; }
+.panel.panel-primary .panel-heading {
+    background-color: $primary;
+    color: white;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: $obsidianlight;
+    border-color: $obsidianlight;
+}
+
+.btn-secondary{
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: $bluelight;
+    border-color: $bluelight;
+}
+.navbar-nav li:hover,
+.navbar-nav li:hover a,
+.navbar-nav li.active a,
+.navbar-nav li.active{
+	background: $secondary;
+}
+
+.panel-primary .panel-default .panel-heading,
+.panel-default .panel-heading {
+    border-bottom: 3px solid $active;
+}
+
+
+.panel-primary .panel-active .panel-heading,
+.panel-active .panel-heading {
+    border-bottom: 3px solid $active;
+}
+
+.modal-header{
+    background: $red;
+}
+
+.loading {
+    background-color: $obsidian;
+    color: white;
+}

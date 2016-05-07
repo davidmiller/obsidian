@@ -1,0 +1,57 @@
+.bg-primary {
+  background-color: #343637; }
+
+.bg-secondary {
+  background-color: #5fa2dd; }
+
+.panel-primary .panel-default .panel-heading.bg-active,
+.bg-active {
+  background-color: #f76c51; }
+
+.panel.panel-primary {
+  border-color: #343637; }
+
+.panel.panel-primary .panel-heading {
+  background-color: #343637;
+  color: white; }
+
+.btn-primary {
+  background-color: #343637;
+  border-color: #343637; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #cbc9c8;
+  border-color: #cbc9c8; }
+
+.btn-secondary {
+  background-color: #5fa2dd;
+  border-color: #5fa2dd; }
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #a0c7ea;
+  border-color: #a0c7ea; }
+
+.navbar-nav li:hover,
+.navbar-nav li:hover a,
+.navbar-nav li.active a,
+.navbar-nav li.active {
+  background: #5fa2dd; }
+
+.panel-primary .panel-default .panel-heading,
+.panel-default .panel-heading {
+  border-bottom: 3px solid #f76c51; }
+
+.panel-primary .panel-active .panel-heading,
+.panel-active .panel-heading {
+  border-bottom: 3px solid #f76c51; }
+
+.modal-header {
+  background: #f76c51; }
+
+.loading {
+  background-color: #343637;
+  color: white; }
+
+/*# sourceMappingURL=obsidian.css.map */

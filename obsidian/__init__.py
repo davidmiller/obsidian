@@ -10,3 +10,6 @@ class Application(application.OpalApplication):
         'js/obsidian/routes.js',
         'js/opal/controllers/discharge.js'
     ]
+    styles = [
+        'css/obsidian.css'
+    ]
