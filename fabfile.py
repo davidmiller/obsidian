@@ -20,7 +20,7 @@ def configure():
                 run('mkvirtualenv -a /home/{0}/ohc/obsidian obsidian'.format(env.user))
 
         with prefix(". /usr/share/virtualenvwrapper/virtualenvwrapper.sh"):
-            with prefix("workon {}".format(virtual_env_name)):
+            with prefix("workon obsidian"):
                 run('pip install -r requirements.txt')
                 run("python manage.py migrate")
                 run("python manage.py collectstatic --noinput")
@@ -33,7 +33,7 @@ def deploy():
     with cd('/home/{0}/ohc/obsidian'.format(env.user)):
         run('git pull origin master')
         with prefix(". /usr/share/virtualenvwrapper/virtualenvwrapper.sh"):
-            with prefix("workon {}".format(virtual_env_name)):
+            with prefix("workon obsidian"):
                 run('pip install -r requirements.txt')
                 run("python manage.py migrate")
                 run("python manage.py collectstatic --noinput")
