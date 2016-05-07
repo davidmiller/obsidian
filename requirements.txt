@@ -14,3 +14,4 @@ requests
 djangorestframework
 django-compressor==1.5
 -e git://github.com/davidmiller/opal.git@obsidian#egg=opal
+supervisor==3.0

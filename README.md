@@ -1,8 +1,13 @@
 This is obsidian - an [OPAL](https://github.com/openhealthcare/opal) project.
 
-To get started, run the following commands: 
+The target deployment environment for this application is a Raspberry Pi or similar.
 
-```
-    python manage.py syncdb --migrate
-    python manage.py runserver
-```
+The `fabfile.py` should include automated environment configuration and deployment.
+
+To configure the environment for the first time:
+
+    fab configure
+
+To deploy subsequent versions:
+
+    fab deploy
