@@ -12,6 +12,8 @@ $primary: $obsidian;
 $secondary: $blue;
 $active: $red;
 
+body { /*background: $obsidianlighter; */ }
+
 .bg-primary { background-color: $primary;}
 .bg-secondary{ background-color: $secondary; }
 
@@ -44,11 +46,18 @@ $active: $red;
     background-color: $bluelight;
     border-color: $bluelight;
 }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: $obsidian;
+}
+
 .navbar-nav li:hover,
 .navbar-nav li:hover a,
 .navbar-nav li.active a,
 .navbar-nav li.active{
-	background: $secondary;
+	background: $obsidianlight;
 }
 
 .panel-primary .panel-default .panel-heading,

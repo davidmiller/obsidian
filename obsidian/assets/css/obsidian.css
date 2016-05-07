@@ -1,3 +1,6 @@
+body {
+  /*background: $obsidianlighter; */ }
+
 .bg-primary {
   background-color: #343637; }
 
@@ -33,11 +36,16 @@
   background-color: #a0c7ea;
   border-color: #a0c7ea; }
 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #343637; }
+
 .navbar-nav li:hover,
 .navbar-nav li:hover a,
 .navbar-nav li.active a,
 .navbar-nav li.active {
-  background: #5fa2dd; }
+  background: #cbc9c8; }
 
 .panel-primary .panel-default .panel-heading,
 .panel-default .panel-heading {
