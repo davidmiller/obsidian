@@ -22,6 +22,8 @@ def configure():
         with prefix(". /usr/share/virtualenvwrapper/virtualenvwrapper.sh"):
             with prefix("workon {}".format(virtual_env_name)):
                 run('pip install -r requirements.txt')
+                run("python manage.py migrate")
+                run("python manage.py collectstatic --noinput")
                 run('supervisord -c etc/pi.conf')
 
     pass
@@ -33,6 +35,8 @@ def deploy():
         with prefix(". /usr/share/virtualenvwrapper/virtualenvwrapper.sh"):
             with prefix("workon {}".format(virtual_env_name)):
                 run('pip install -r requirements.txt')
+                run("python manage.py migrate")
+                run("python manage.py collectstatic --noinput")
                 run('supervisorctl -c etc/pi.conf restart gunicorn')
 
     pass
